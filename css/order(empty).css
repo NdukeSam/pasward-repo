@@ -1,4 +1,8 @@
 /* start of header css */
+body{
+  overflow-x: hidden;
+}
+
 body h1, h2, h3, h4, h5, h6{
     font-family: 'Ubuntu', sans-serif!important;
     color: #000333!important;
@@ -398,7 +402,17 @@ body h1, h2, h3, h4, h5, h6{
      .rotated{
        display: none;
      }
-  }
+     .top_star{
+       display: none;
+     }
+     .top{
+       padding: 10px;
+     }
+
+     .sidenav a {
+      color: #000033;
+      font-weight: bold;
+    }
 
   @media only screen and (min-width: 768px) {
     .hide-sm{
@@ -416,18 +430,38 @@ body h1, h2, h3, h4, h5, h6{
       display: none!important;
     }
 
+    .top_star img{
+      height: 220px;
+      top: 24px;
+      right: -63px;
+      position: absolute;
+      z-index: -1;
+    }
+
     .rotated{
      -webkit-transform: rotate(270deg);
      -moz-transform: rotate(270deg);
      -o-transform: rotate(270deg);
      -ms-transform: rotate(270deg);
      transform: rotate(270deg);
-     position: absolute;
-     top: 35%;
+     position: fixed;
+     top: 59%;
      left: 95%;
-     min-height: 300px;
+     min-height: 200px;
      display: inline-block;
-     position: absolute;
+     z-index: 5;
+    }
+    .line{
+      height: 1px;
+      width: 287px;
+      border: 1px solid #000033;
+      position: absolute;
+      z-index: 5;
+      margin-top: 9px;
+      margin-left: 11px;
+    }
+    .cabin{
+      font-family: 'Cabin', sans-serif;
     }
 
     .path_star{
@@ -435,7 +469,8 @@ body h1, h2, h3, h4, h5, h6{
       left: 30px;
     }
 
-    .cabin{
-      font-family: 'Cabin', sans-serif;
-    }
+    .top_star{
+       display: block;
+     }
+
   }

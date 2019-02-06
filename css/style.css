@@ -99,20 +99,25 @@
 }
 
 .img-block:hover .edit{
-  display: block;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-block .edit img:hover{
+  border: none!important;
 }
 
 .edit {
 	padding-top: 10px;
-	padding-right: 14px;
+	padding-left: 97px;
 	position: absolute;
 	right: 0;
 	top: 0;
 	display: none;
 }
 
-.edit i {
-	color: #FF3C89;
+.edit:hover {
+	text-transform: none;
 }
 
 .flash:hover .ease-up_overlay{
@@ -142,6 +147,7 @@ button.slick-prev.slick-arrow {
   border-radius: 100%;
   width: 148px;
   text-indent: -9999px;
+  border: none;
   }
 
   button.slick-next.slick-arrow{
@@ -152,6 +158,7 @@ button.slick-prev.slick-arrow {
     border-radius: 100%;
     width: 148px;
     text-indent: -9999px;
+    border: none;
   }
 
 @media only screen and (max-width: 360px) {
@@ -168,7 +175,27 @@ button.slick-prev.slick-arrow {
         display: none;
     }
 
+    button.slick-prev.slick-arrow {
+      background: url("../images/left dir.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-size: 18px;
+      border-radius: 100%;
+      width: 148px;
+      text-indent: -9999px;
+      border: none;
+      }
 
+      button.slick-next.slick-arrow{
+        background: url("../images/right dir.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-size: 18px;
+        border-radius: 100%;
+        width: 148px;
+        text-indent: -9999px;
+        border: none;
+      }
 
 
 

@@ -346,7 +346,7 @@ input:focus{
     color: #969696;
     text-align: center;
 }
-.line{
+.run-through{
     display: block;
     margin-top: 9px;
     margin-bottom: 0px;
@@ -594,11 +594,10 @@ opacity: 100%;
 /*This too SHOULD BE COPIED */
 @media only screen and (min-width: 768px) {
 
-  h2{
-    font-family:sans-serif;
-    color:#fff;
+  
+  .cabin{
+    font-family: 'Cabin', sans-serif;
   }
-
   .svglogo {
     margin-left: -15px;
 
