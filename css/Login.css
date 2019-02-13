@@ -79,6 +79,21 @@ body p{
   border-radius: 17px;
   padding: 5px;
 }
+
+#dropdown-search::-ms-input-placeholder{
+  color: #FF3C89;
+  opacity: 1;
+}
+
+#dropdown-search::-ms-input-placeholder{
+  color: #FF3C89;
+  opacity: 1;
+}
+
+#dropdown-search::-webit-input-placeholder{
+  color: #FF3C89;
+  opacity: 1;
+}
 /* end code for categories dropdown */
 .info{
     background-color: #F5F5F5;
