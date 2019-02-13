@@ -14,6 +14,85 @@ body h1, h2, h3, h4, h5, h6{
     font-family: 'Cabin', sans-serif!important;
   }
 
+  /* start code for categories dropdown */
+  .categories{
+    width: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .drop{
+    background-color: #000333;
+    height: 100vh;
+  }
+
+  .drop li a{
+    color: #fff;
+  }
+
+  .drop a:hover{
+    color: #ff3c89;
+  }
+  .icon::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+   .drop a:hover::before{
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f005";
+      content: "\f005";
+      position: relative;
+      left: -18px;
+      top: 47px;
+  }
+
+  .drop h1{
+    font-size: 30px;
+    color: #fff;
+  }
+
+
+  .categories-margin-top{
+    margin-top: 60px;
+    text-align: left;
+    padding-left: 80px;
+    margin-bottom: 123px;
+  }
+
+  .simply{
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 200;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .explore{
+    background-color: #FF0066;
+    color: #fff;
+    border: none;
+    border-radius: 17px;
+    padding: 5px;
+  }
+
+  #dropdown-search::-ms-input-placeholder{
+    color: #FF3C89;
+    opacity: 1;
+  }
+
+  #dropdown-search::-ms-input-placeholder{
+    color: #FF3C89;
+    opacity: 1;
+  }
+
+  #dropdown-search::-webit-input-placeholder{
+    color: #FF3C89;
+    opacity: 1;
+  }
+  /* end code for categories dropdown */
+
   .info{
       background-color: #F5F5F5;
       height: 60px;
