@@ -1,10 +1,11 @@
-
+/* start of header css */
 body{
   padding-top: 100px;
 }
 
 body h1, h2, h3, h4, h5, h6{
   font-family: 'Ubuntu', sans-serif;
+  color: #000333;
 }
 
 body a{
@@ -187,7 +188,9 @@ input:focus{
 
 .nav-item:hover{
   text-decoration: none;
+  border-bottom: 3px solid #000033;
   padding-bottom: 1px;
+  transition: all 1s ease-in-out;
 }
 
 #navbar-large{
@@ -195,6 +198,8 @@ input:focus{
   flex-direction: row-reverse;
   justify-content: space-between;
 }
+
+
 .none{
   border-left-color: #fff;
   /* border-right: 1px solid #FF0066; */
@@ -219,21 +224,6 @@ input:focus{
   opacity: 1;
 }
 
-#dropdown-search::-ms-input-placeholder{
-  color: #FF3C89;
-  opacity: 1;
-}
-
-#dropdown-search::-ms-input-placeholder{
-  color: #FF3C89;
-  opacity: 1;
-}
-
-#dropdown-search::-webit-input-placeholder{
-  color: #FF3C89;
-  opacity: 1;
-}
-
 .fa-search{
   color: #fff;
 }
@@ -241,264 +231,8 @@ input:focus{
 .fa-send{
   color: #FF0066;
 }
-
-
-.path img{
-    height: 1010px;
-    position: absolute;
-    bottom: 202px;
-    right: 805px;
-    z-index: -1;
-}
-.star img{
-    height: 300px;
-    top: 39px;
-    right: 505px;
-    position: absolute;
-    z-index: -1;
-
-}
-.login{
-    font-size: 45px;
-    color: #000033;
-    text-align: center;
-    font-family:'Ubuntu', sans-serif;
-    font-weight: bold;
-
-}
-.card-edit{
-    background:#f5f5f5;
-    border-radius:3px;
-    -webkit-box-shadow: 0px -1px 21px -7px;
-    -moz-box-shadow: 0px -1px 21px -7px;
-    box-shadow: 0px -1px 21px -7px;
-    height: auto;
-    position: relative;
-}
-.edit-card{
-    background:#f5f5f5;
-    border-radius:3px;
-    -webkit-box-shadow: 0px -1px 21px -7px;
-    -moz-box-shadow: 0px -1px 21px -7px;
-    box-shadow: 0px -1px 21px -7px;
-    height: auto;
-    position: relative;
-}
-
-.card-edit-login{
-    background:#ffffff;
-    border-radius:3px;
-    -webkit-box-shadow: 0px -1px 21px -7px;
-    -moz-box-shadow: 0px -1px 21px -7px;
-    box-shadow: 0px -1px 21px -7px;
-    height: auto;
-    width: 300px;
-    position: relative;
-    margin-top:160px;
-}
-
-.edit-card-edit{
-   background:#ffffff;
-   border-radius:3px;
-   -webkit-box-shadow: 0px -1px 21px -7px;
-   -moz-box-shadow: 0px -1px 21px -7px;
-   box-shadow: 0px -1px 21px -7px;
-   width: 300px;
-   position: relative;
-   margin-top:160px;
-   margin-left: 20px;
-}
-.you{
-    font-size: 15px;
-    font-family:'Ubuntu', sans-serif;
-    font-weight: bold;
-    color: #000033;
-    padding: 10px;
-    text-align: center;
-}
-#password-input{
-    margin-top: 8px;
-    width: 235px;
-}
-
-#text-input{
-    margin-top: 8px;
-    width: 235px;
-}
-
-.email{
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.address{
-    font-size: 12px;
-    color: #969696;
-    font-family: 'Cabin', sans-serif;
-    margin-top: 10px;
-}
-.forgot{
-    color: #FF3C89;
-    font-size: 10px;
-    font-style: italic;
-    font-family:'Ubuntu', sans-serif;
-    margin-left: 100px;
-}
-#continuebutton{
-    background-color: #FF0066;
-    border-color: transparent;
-    width: 240px;
-    display: inline-block;
-    font-size: 10px;
-    font-family: 'Cabin', sans-serif;
-    border-radius: 15px;
-    color:white;
-    height: 30px;
-    margin-left: 25px;
-    margin-top: 15px;
-}
-.or{
-    font-size: 12px;
-    font-family:'Cabin', sans-serif;
-    color:#969696;
-    text-align: center;
-    margin-top: 10px;
-}
-#facebookbutton{
-    background-color: #E9EBFA;
-    border-color:#025AFF ;
-    width: 240px;
-    display: inline-block;
-    font-size: 10px;
-    font-family: 'Cabin', sans-serif;
-    border-radius: 15px;
-    color:#025AFF;
-    height: 30px;
-    margin-left: 25px;
-    margin-top: -8px;
-}
-.edit-card-editing{
-    background:#ffffff;
-    border-radius:3px;
-    -webkit-box-shadow: 0px -1px 21px -7px;
-    -moz-box-shadow: 0px -1px 21px -7px;
-    box-shadow: 0px -1px 21px -7px;
-    height: 30%;
-    width: 300px;
-    position: relative;
-    margin-top:0px;
-    margin-left: 0px;
- }
- #grad {
-   background-color: #E9EAF9;
-  }
-  .are{
-      color: #969696;
-      font-size: 12px;
-      font-family: 'Cabin', sans-serif;
-      font-style: italic;
-      text-align: center;
-  }
-  .new{
-      margin-top: 0px;
-  }
-  #signupbutton{
-    background-color: white;
-    border-color: #FF0066;
-    width: 240px;
-    display: inline-block;
-    font-size: 10px;
-    font-family: 'Cabin', sans-serif;
-    border-radius: 15px;
-    color: #FF0066;;
-    height: 30px;
-    margin-left: 25px;
-    margin-top: -8px;
-    margin-top: 12px;
-    padding-bottom: 10px;
-}
-.instead{
-   color:#FF0066 ;
-   font-size: 12px;
-   font-family: 'Cabin', sans-serif;
-   font-style: italic;
-   text-align: center;
-}
-.instead a{
-    color: #FF0066;
-}
-.color{
-    font-size: 12px;
-    font-family: 'Cabin', sans-serif;
-    font-style: italic;
-    color: #969696;
-    text-align: center;
-}
-.line{
-    display: block;
-    margin-top: 9px;
-    margin-bottom: 0px;
-    margin-left: 1px;
-    margin-right: 1px;
-    border-style: inset;
-    border-width: 0.25px;
-    border-color: #6E6E6E;
-}
-.notabuyer{
-    padding-top: 10px;
-}
-.box{
-    display: flex;
-    justify-content: space-around;
-}
-.vendorbox{
-   text-align: center;
-   padding-top: 5px;
-   padding-bottom: 5px;
-}
-.merchantbox{
-    text-align: center;
-    padding-top: 5px;
-   padding-bottom: 5px;
-}
-.vert-con{
-    height:30px;
-}
-.vert-line{
-    height:35px;
-    width:1px;
-    padding:0px;
-    text-align: center;
-    border:1px dashed #6E6E6E;
-}
-.vendortext{
-    font-size: 12px;
-    color: #000033;
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
-    float: right;
-    margin-left: 10px;
-}
-.merchanttext{
-    font-size: 12px;
-    color: #000033;
-    font-weight: bold;
-    font-family: 'Ubuntu', sans-serif;
-    float: right;
-    margin-left: 10px;
-}
-/*Footer CSS*/
-a:link {
-    color: #000033;
-    text-decoration: none;
-}
-a:visited {
-    color:#000033 ;
-    text-decoration: none;
-}
-a:hover {
-    color: hotpink;
-    text-decoration: none;
-}
+/* end of header css  */
+/* start of footer css */
 .merchant{
     background-color: #E9EAF9;
     margin-top: 160px;
@@ -559,7 +293,6 @@ opacity: 100%;
 .rated{
     background-color: #000033;
 }
-
 .list a{
     color: #6E6E6E;
     font-size: 12px;
@@ -593,7 +326,6 @@ opacity: 100%;
     font-family: 'Cabin', sans-serif;
     margin-top: 30px;
 }
-
 .accessory  .platform  a:hover{
     color: white;
     text-decoration: none;
@@ -641,15 +373,44 @@ opacity: 100%;
   float: right !important;
 }
 
-/*all the WAY down here*/
+/*end of footer css*/
 
-/*MEDIA QUERY FOR THE HEADER AND FOOTER SHOULD BE COPIED AS WELL*/
+/* about Passward content css */
+.absolute-on-header{
+  position: absolute;
+  top: 200px;
+  left: 50%;
+}
+
+.picture-on-header{
+  height: 350px;
+}
+
+/* about Passward content css ends here */
+
+
+ /* media queries */
 @media only screen and (min-width: 320px) {
-
   .svglogo {
     padding-top: 15px;
 
   }
+  .third, .fifth, .sixth{
+    display: none;
+  }
+
+  .path{
+      height: 390px;
+      position: absolute;
+      top: 137px;
+      left: -71px;
+      overflow: hidden;
+  }
+
+  .top_star{
+    display: none;
+  }
+
   .top{
     padding: 10px;
   }
@@ -661,33 +422,113 @@ opacity: 100%;
   .hide-sm{
     display: none;
   }
-/*
+
+  .hidden-sm{
+    display: none;
+  }
+
   .input-group{
     width: 248px;
-  } */
-      .none img{
-          display: none;
-      }
-      .become{
-          display: none;
-      }
-      .becoming{
-          display: none;
-      }
-      .lorem{
-          display: none;
-      }
-      #navbar-large{
-        display: flex;
-      }
+  }
+
+  .header-form{
+    height: 180px;
+    width: fit-content;
+    padding-top: 7px;
+    padding-left: 9px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #fff;
+    bottom: 18px;
+    left: 20px;
+    z-index: 2;
+  }
+
+  .curve{
+    border-radius: 5px;
+  }
+
+  .on-side{
+    position: absolute;
+    top: 37%;
+    left: 39%;
+  }
+
+  .on-side-last{
+    position: absolute;
+    top: 58%;
+    right: 11%;
+  }
+
+  .on-side-3{
+    position: absolute;
+    top: 14%;
+    right: 10%;
+  }
+
+  .rotated{
+    display: none;
+  }
+
+  #products{
+    margin-top: 0px!important;
+  }
+
+  .part1{
+    padding-top: 369px;
+    justify-content: center;
+  }
+
+  .video{
+    top: -81px;
+  }
+  .space{
+    margin-top: 250px;
+  }
 }
 
-/*This too SHOULD BE COPIED */
-@media only screen and (min-width: 768px) {
 
-  h2{
-    font-family:sans-serif;
-    color:#fff;
+@media only screen and (min-width: 768px) {
+  #products{
+    margin-top: 145px!important;
+  }
+
+  .info{
+    display: none;
+  }
+
+  .wrapper{
+  width:100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+#navbar-large{
+  display: flex;
+}
+
+#desktop-nav{
+  display: none;
+}
+
+.carousel{
+  width:90%;
+  margin:0px auto;
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide{
+  margin:10px;
+}
+
+.slick-slide img{
+  width:100%;
+  border: 2px solid #fff;
+}
+
+  .third, .fifth, .sixth{
+    display: grid;
   }
 
   .svglogo {
@@ -711,24 +552,199 @@ opacity: 100%;
    color: #FF3C89;
   }
 
+  .loc_select_box{
+    /* width: 230px !important; */
+    color: #FF3C89;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .cart-box{
+    background-color: #FF3C89;
+    border-radius: 100%;
+    height: 48px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rotated{
+   -webkit-transform: rotate(270deg);
+   -moz-transform: rotate(270deg);
+   -o-transform: rotate(270deg);
+   -ms-transform: rotate(270deg);
+   transform: rotate(270deg);
+   position: fixed;
+   top: 46%;
+   left: 95%;
+   min-height: 200px;
+   display: inline-block;
+   z-index: 5;
+  }
+  .line{
+    height: 1px;
+    width: 287px;
+    border: 1px solid #000033;
+    position: absolute;
+    z-index: 5;
+    margin-top: 9px;
+    margin-left: 11px;
+  }
+
+  .cabin{
+    font-family: 'Cabin', sans-serif;
+  }
+
+  .path{
+      height: 800px;
+      position: absolute;
+      top: 300px;
+      left: -20px;
+      overflow: hidden;
+  }
+
+  .top_star{
+    display: block;
+  }
+
+  .top_star img{
+    height: 220px;
+    top: 24px;
+    right: -63px;
+    position: absolute;
+  }
+
   .top{
     padding: 0px;
 
   }
 
-  .navbar-nav{
-    float: none;
-  }
-
-
   .checkout{
     margin-top: 5px;
   }
 
-  #navbar-large{
-    display: hidden;
-  }
-
+.slider{
+  height: auto;
 }
 
-/*TO THE VERY END*/
+  .left{
+    background-color: grey;
+    height: 40px;
+    width: 45px;
+    border-radius: 100%;
+    position: absolute;
+    top: 140px;
+    right: 1050px;
+  }
+
+  .right{
+    background-color: grey;
+    border-radius: 100%;
+    height: 40px;
+    width: 45px;
+    position: absolute;
+    top: 140px;
+    left: 1050px;
+  }
+
+.curve{
+  border-radius: 5px;
+}
+
+.filter{
+  filter: blur(3px);
+  height: auto;
+  width: auto;
+  background-color: #f5f5f5;
+}
+
+  .input-group{
+    width: 100%;
+  }
+
+  .header-form{
+    height: 80px;
+    width: fit-content;
+    padding-top: 7px;
+    padding-left: 9px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #fff;
+    top: -51px;
+    left: 7%;
+    z-index: 2;
+  }
+
+  .on-side{
+    position: absolute;
+    top: 44%;
+    left: 23%;
+  }
+
+  .on-side-last{
+    position: absolute;
+    top: 70%;
+    right: 1%;
+
+  }
+
+  .on-side-2{
+    position: absolute;
+    top: 20%;
+    right: 50%;
+  }
+
+  .on-side-3{
+    position: absolute;
+    top: 20%;
+    right: 1%;
+  }
+
+  .on-side-4{
+    position: absolute;
+    top: 70%;
+    right: 50%;
+  }
+
+  .on-side-5{
+    position: absolute;
+    top: 70%;
+    left: 72%;
+  }
+
+  .part1{
+    padding-top: 0px;
+  }
+  .space{
+    margin-top: 70px;
+  }
+
+  .top_star{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1024px){
+
+  #navbar-large{
+    display: none!important;
+  }
+
+  #desktop-nav{
+    display: block;
+  }
+
+  .info{
+    display: block;
+  }
+
+  .header-form{
+    position: relative;
+    top: -56px;
+    left: 28%;
+  }
+
+  .top_star{
+    display: contents;
+}

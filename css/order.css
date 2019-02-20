@@ -29,12 +29,16 @@ body p{
   height: 100vh;
 }
 
-.drop li a{
-  color: #fff;
+.drop h3{
+  color: #fff!important;
 }
-
+.drop a{
+  color: #fff;
+  text-decoration: none;
+}
 .drop a:hover{
-  color: #ff3c89;
+  color: #ff3c89!important;
+  text-decoration: none;
 }
 .icon::before {
     display: inline-block;
@@ -54,7 +58,7 @@ body p{
 
 .drop h1{
   font-size: 30px;
-  color: #fff;
+  color: #fff!important;
 }
 
 
@@ -188,9 +192,6 @@ input:focus{
 
 .nav-item:hover{
   text-decoration: none;
-  border-bottom: 3px solid #000033;
-  padding-bottom: 1px;
-  transition: all 1s ease-in-out;
 }
 
 #navbar-large{
@@ -198,7 +199,6 @@ input:focus{
   flex-direction: row-reverse;
   justify-content: space-between;
 }
-
 
 
 /*
@@ -378,6 +378,10 @@ opacity: 100%;
     height: 30px;
     margin-top: 40px;
 }
+
+.other-table{
+  border: 1px solid #ccc;
+}
 .copyright{
     font-size: 12px;
     font-family: 'Cabin', sans-serif;
@@ -393,6 +397,35 @@ opacity: 100%;
 ._display{
   display: flex;
   border: 1px solid #EEEFFA;
+}
+
+#add-to-cart{
+  background-color: #FF0066;
+  border-color: transparent;
+  width: 120px;
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Cabin', sans-serif;
+  border-radius: 15px;
+  color:white;
+  height: 30px;
+  margin-right: 20px;
+}
+
+#cancelled{
+  color: #FFB000;
+}
+
+#essential{
+  color: #000033;
+  font-weight: bold;
+  font-family: "Ubuntu", cursive;
+}
+#view-details{
+  color: #FF3C89;
+}
+#completed{
+  color: #52CB9C;
 }
 
 .bd{
@@ -441,6 +474,14 @@ opacity: 100%;
     display: none;
   }
 
+  .info{
+    display: none;
+  }
+
+  #desktop-nav{
+    display: none;
+  }
+
   .hidden-sm{
     display: block;
   }
@@ -449,7 +490,7 @@ opacity: 100%;
     display: none;
   }
   #navbar-large{
-    display: none!important;
+    display: flex;
   }
 
   .top_star img{
@@ -496,4 +537,19 @@ opacity: 100%;
      display: block;
    }
 
+}
+
+@media only screen and (min-width: 1024px){
+
+  #navbar-large{
+    display: none!important;
+  }
+
+  #desktop-nav{
+    display: block;
+  }
+
+  .info{
+    display: block;
+  }
 }
