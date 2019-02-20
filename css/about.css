@@ -45,7 +45,7 @@ body p{
   }
 
  .drop a:hover::before{
-    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f005";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
     content: "\f005";
     position: relative;
     left: -18px;
@@ -384,6 +384,23 @@ opacity: 100%;
 
 .picture-on-header{
   height: 350px;
+}
+
+.text-bold{
+  font-weight: bold;
+}
+.text-light{
+  color: #969696;
+}
+
+.star-before::before{
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  content: "\f005";
+  color: #ff3c89;
+  font-size: 20px;
+  position: relative;
+  top: -3px;
+  right: 28px;
 }
 
 /* about Passward content css ends here */
