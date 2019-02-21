@@ -918,7 +918,7 @@ input:focus{
 
 
     .top_star{
-      display: block;
+      /* display: block; */
       top: 24px;
       right: -63px;
       position: absolute;
@@ -927,7 +927,3 @@ input:focus{
   .shopping_space{
     margin: 0;
   }
-
-  .top_star{
-    display: contents;
-}
