@@ -1,6 +1,9 @@
 /* start of header css */
 body{
-  padding-top: 100px;
+  margin: 0px;
+  overflow-x: hidden;
+  height: auto;
+  padding-top: 170px;
 }
 
 body h1, h2, h3, h4, h5, h6{
@@ -50,12 +53,11 @@ body p{
     position: relative;
     left: -18px;
     top: 47px;
-
 }
-
 
 .drop h1{
   font-size: 30px;
+  color: #fff;
 }
 
 
@@ -199,7 +201,6 @@ input:focus{
   justify-content: space-between;
 }
 
-
 .none{
   border-left-color: #fff;
   /* border-right: 1px solid #FF0066; */
@@ -232,6 +233,7 @@ input:focus{
   color: #FF0066;
 }
 /* end of header css  */
+
 /* start of footer css */
 .merchant{
     background-color: #E9EAF9;
@@ -340,15 +342,17 @@ opacity: 100%;
    border-width: 0.8px;
    border-color: #6E6E6E;
 }
-.line1 hr{
+.line1 input{
     display: block;
     margin-left: 40px;
     margin-bottom: 0.5em;
     margin-right: 30px;
     border-style: inset;
     border-width: 0.8px;
-    border-color: #6E6E6E;
-    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #6E6E6E;
+    margin-top: 10px;
+    background-color: transparent;
 }
 #subscribebutton{
     background-color: #FF0066;
@@ -371,15 +375,31 @@ opacity: 100%;
 }
 .nav-link {
   float: right !important;
+  }
+
+  .circle{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .up{
+    font-size: 17px;
+    color: #707070;
+    align-self: center;
+  }
 }
 
 /*end of footer css*/
 
-/* about Passward content css */
 .absolute-on-header{
   position: absolute;
-  top: 200px;
+  top: 30%;
   left: 50%;
+
 }
 
 .picture-on-header{
@@ -388,48 +408,39 @@ opacity: 100%;
 
 .text-bold{
   font-weight: bold;
+  color: #000333;
 }
+
 .text-light{
   color: #969696;
 }
 
 .star-before::before{
   font-family: "Font Awesome 5 Free"; font-weight: 900;
-  content: "\f005";
   color: #ff3c89;
-  font-size: 20px;
+  content: "\f005";
   position: relative;
-  top: -3px;
-  right: 28px;
+  font-size: 20px;
+  right: 30px;
+  top: 0;
+
 }
 
-/* about Passward content css ends here */
+.pink-side{
+  border-left: 1px solid #FF0066;
+}
 
 
- /* media queries */
+
+/* start of header media query */
+
 @media only screen and (min-width: 320px) {
-  .svglogo {
-    padding-top: 15px;
-
-  }
-  .third, .fifth, .sixth{
+  #desktop-nav{
     display: none;
   }
 
-  .path{
-      height: 390px;
-      position: absolute;
-      top: 137px;
-      left: -71px;
-      overflow: hidden;
-  }
-
-  .top_star{
-    display: none;
-  }
-
-  .top{
-    padding: 10px;
+  #navbar-flex{
+    display: flex;
   }
 
   .hide-md{
@@ -440,112 +451,32 @@ opacity: 100%;
     display: none;
   }
 
-  .hidden-sm{
-    display: none;
-  }
+  .svglogo {
+    padding-top: 15px;
 
-  .input-group{
-    width: 248px;
   }
+    .part1{
+      /* padding-top: 369px; */
+      justify-content: center;
+    }
 
-  .header-form{
-    height: 180px;
-    width: fit-content;
-    padding-top: 7px;
-    padding-left: 9px;
-    border-radius: 7px;
-    position: relative;
-    background-color: #fff;
-    bottom: 18px;
-    left: 20px;
-    z-index: 2;
-  }
+    .video{
+      top: -81px;
+    }
+    .space{
+      margin-top: 250px;
+    }
 
-  .curve{
-    border-radius: 5px;
-  }
-
-  .on-side{
-    position: absolute;
-    top: 37%;
-    left: 39%;
-  }
-
-  .on-side-last{
-    position: absolute;
-    top: 58%;
-    right: 11%;
-  }
-
-  .on-side-3{
-    position: absolute;
-    top: 14%;
-    right: 10%;
-  }
-
-  .rotated{
-    display: none;
-  }
-
-  #products{
-    margin-top: 0px!important;
-  }
-
-  .part1{
-    padding-top: 369px;
-    justify-content: center;
-  }
-
-  .video{
-    top: -81px;
-  }
-  .space{
-    margin-top: 250px;
-  }
+    .absolute-on-header{
+      top: 213px;
+      right: 175px;
+      position: absolute;
+    }
 }
-
 
 @media only screen and (min-width: 768px) {
-  #products{
-    margin-top: 145px!important;
-  }
-
   .info{
     display: none;
-  }
-
-  .wrapper{
-  width:100%;
-  padding-top: 20px;
-  text-align: center;
-}
-
-#navbar-large{
-  display: flex;
-}
-
-#desktop-nav{
-  display: none;
-}
-
-.carousel{
-  width:90%;
-  margin:0px auto;
-  display: flex;
-  align-items: center;
-}
-
-.slick-slide{
-  margin:10px;
-}
-
-.slick-slide img{
-  width:100%;
-  border: 2px solid #fff;
-}
-
-  .third, .fifth, .sixth{
-    display: grid;
   }
 
   .svglogo {
@@ -565,203 +496,33 @@ opacity: 100%;
     display: none;
   }
 
-  .fa-paper-plane{
-   color: #FF3C89;
-  }
-
-  .loc_select_box{
-    /* width: 230px !important; */
-    color: #FF3C89;
-    border-radius: 8px;
-    text-align: center;
-  }
-
-  .cart-box{
-    background-color: #FF3C89;
-    border-radius: 100%;
-    height: 48px;
-    width: 50px;
+  ._display{
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
+  ._center{
+    display: flex;
+    align-self: center;
+    font-size: 23px;
+    color: #FF3C89;
 
-  .rotated{
-   -webkit-transform: rotate(270deg);
-   -moz-transform: rotate(270deg);
-   -o-transform: rotate(270deg);
-   -ms-transform: rotate(270deg);
-   transform: rotate(270deg);
-   position: fixed;
-   top: 46%;
-   left: 95%;
-   min-height: 200px;
-   display: inline-block;
-   z-index: 5;
-  }
-  .line{
-    height: 1px;
-    width: 287px;
-    border: 1px solid #000033;
-    position: absolute;
-    z-index: 5;
-    margin-top: 9px;
-    margin-left: 11px;
-  }
-
-  .cabin{
-    font-family: 'Cabin', sans-serif;
-  }
-
-  .path{
-      height: 800px;
-      position: absolute;
-      top: 300px;
-      left: -20px;
-      overflow: hidden;
-  }
-
-  .top_star{
-    display: block;
-  }
-
-  .top_star img{
-    height: 220px;
-    top: 24px;
-    right: -63px;
-    position: absolute;
-  }
-
-  .top{
-    padding: 0px;
-
-  }
-
-  .checkout{
-    margin-top: 5px;
-  }
-
-.slider{
-  height: auto;
-}
-
-  .left{
-    background-color: grey;
-    height: 40px;
-    width: 45px;
-    border-radius: 100%;
-    position: absolute;
-    top: 140px;
-    right: 1050px;
-  }
-
-  .right{
-    background-color: grey;
-    border-radius: 100%;
-    height: 40px;
-    width: 45px;
-    position: absolute;
-    top: 140px;
-    left: 1050px;
-  }
-
-.curve{
-  border-radius: 5px;
-}
-
-.filter{
-  filter: blur(3px);
-  height: auto;
-  width: auto;
-  background-color: #f5f5f5;
-}
-
-  .input-group{
-    width: 100%;
-  }
-
-  .header-form{
-    height: 80px;
-    width: fit-content;
-    padding-top: 7px;
-    padding-left: 9px;
-    border-radius: 7px;
-    position: relative;
-    background-color: #fff;
-    top: -51px;
-    left: 7%;
-    z-index: 2;
-  }
-
-  .on-side{
-    position: absolute;
-    top: 44%;
-    left: 23%;
-  }
-
-  .on-side-last{
-    position: absolute;
-    top: 70%;
-    right: 1%;
-
-  }
-
-  .on-side-2{
-    position: absolute;
-    top: 20%;
-    right: 50%;
-  }
-
-  .on-side-3{
-    position: absolute;
-    top: 20%;
-    right: 1%;
-  }
-
-  .on-side-4{
-    position: absolute;
-    top: 70%;
-    right: 50%;
-  }
-
-  .on-side-5{
-    position: absolute;
-    top: 70%;
-    left: 72%;
-  }
-
-  .part1{
-    padding-top: 0px;
-  }
-  .space{
-    margin-top: 70px;
-  }
-
-  .top_star{
-    display: none;
   }
 }
 
 @media only screen and (min-width: 1024px){
-
-  #navbar-large{
-    display: none!important;
-  }
-
   #desktop-nav{
     display: block;
   }
-
   .info{
     display: block;
   }
-
-  .header-form{
-    position: relative;
-    top: -56px;
-    left: 28%;
+  #navbar-large{
+    display: none;
   }
 
-  .top_star{
-    display: contents;
+  .absolute-on-header{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
 }
+/* end of header media query */

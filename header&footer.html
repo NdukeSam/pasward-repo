@@ -1,5 +1,12 @@
 <style>
   /* start of header css */
+  body{
+    margin: 0px;
+    overflow-x: hidden;
+    height: auto;
+    padding-top: 70px;
+  }
+
   body h1, h2, h3, h4, h5, h6{
     font-family: 'Ubuntu', sans-serif;
   }
@@ -46,12 +53,11 @@
       position: relative;
       left: -18px;
       top: 47px;
-
   }
-
 
   .drop h1{
     font-size: 30px;
+    color: #fff;
   }
 
 
@@ -195,7 +201,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-
 
   .none{
     border-left-color: #fff;
@@ -371,6 +376,28 @@
   }
 
   /*end of footer css*/
+
+  /* start of header media query */
+  @ media only screen and (min-width: 360px) {
+    #desktop-nav{
+      display: none;
+    }
+
+    #navbar-flex{
+      display: flex;
+    }
+  }
+
+  @media only screen and (min-width: 1024px;){
+    #desktop-nav{
+      display: block;
+    }
+
+    #navbar-flex{
+      display: none;
+    }
+  }
+  /* end of header media query */
 </style>
 <!-- Start of Nav-->
 <div class="navbar-fixed-top">
@@ -643,6 +670,11 @@ Copyright 2018
   <!-- End of Footer -->
 
   <!-- Start of script-->
+  <script src="js/jquery.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
   <script type="text/javascript">
   function openNav() {
 document.getElementById("mySidenav").style.width = "200px";

@@ -12,13 +12,7 @@
     text-align: center;
     color: #969696;
 }
-.show{
-    font-size: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    font-style: italic;
-    color: #FF3C89;
-    text-align: center;
-}
+
 .items{
      font-size: 12px;
      font-family: 'Cabin', sans-serif;
@@ -75,8 +69,6 @@
     border-radius: 8%;
     width: 150px;
 }
-
-
 
 .row2{
     margin-left: -10px;
@@ -161,7 +153,14 @@ button.slick-prev.slick-arrow {
     border: none;
   }
 
-@media only screen and (max-width: 360px) {
+  .gimme-space{
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+@media only screen and (max-width: 410px) {
     .none img{
         display: none;
     }
@@ -197,10 +196,37 @@ button.slick-prev.slick-arrow {
         border: none;
       }
 
+      .show{
+          font-size: 10px;
+          font-family: 'Ubuntu', sans-serif;
+          font-style: italic;
+          color: #FF3C89;
+          text-align: center;
+          width: auto!important;
+      }
 
 
 }
 /* end of media query */
+
+/* another media query */
+@media only screen and (max-width: 768px){
+  .flash{
+      margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .show{
+      font-size: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-style: italic;
+      color: #FF3C89;
+      text-align: center;
+      width: inherit;
+  }
+}
 #buybutton{
     background-color: white;
     border-radius: 12px;
@@ -288,7 +314,7 @@ a:hover {
 .star{
     color: #FF0066;
     font-size: 10px;
-    margin-left: 30px;
+    padding: 3px;
     justify-content: space-between;
 }
 .far-fa-star{
@@ -306,6 +332,7 @@ a:hover {
     border: 5px,5px;
     background-color: #E9EAF9;
 }
+/* start of footer css */
 .merchant{
     background-color: #E9EAF9;
     margin-top: 160px;
@@ -374,6 +401,8 @@ opacity: 100%;
 .list:hover {
     color: white;
     text-decoration: none;
+
+
 }
 .category{
    color: white;
@@ -411,15 +440,17 @@ opacity: 100%;
    border-width: 0.8px;
    border-color: #6E6E6E;
 }
-.line1 hr{
+.line1 input{
     display: block;
     margin-left: 40px;
     margin-bottom: 0.5em;
     margin-right: 30px;
     border-style: inset;
     border-width: 0.8px;
-    border-color: #6E6E6E;
-    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #6E6E6E;
+    margin-top: 10px;
+    background-color: transparent;
 }
 #subscribebutton{
     background-color: #FF0066;
@@ -442,4 +473,22 @@ opacity: 100%;
 }
 .nav-link {
   float: right !important;
+  }
+
+  .circle{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .up{
+    font-size: 17px;
+    color: #707070;
+    align-self: center;
+  }
 }
+
+/*end of footer css*/
