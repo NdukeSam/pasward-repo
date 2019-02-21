@@ -643,12 +643,23 @@ input:focus{
     margin-top: 145px!important;
   }
 
+  .info{
+    display: none;
+  }
+
   .wrapper{
   width:100%;
   padding-top: 20px;
   text-align: center;
 }
 
+#desktop-nav{
+  display: none;
+}
+
+#navbar-large{
+  display: flex;
+}
 
 .carousel{
   width:90%;
@@ -691,7 +702,6 @@ input:focus{
   }
 
   .loc_select_box{
-    width: 230px !important;
     color: #FF3C89;
     border-radius: 8px;
     text-align: center;
@@ -707,6 +717,8 @@ input:focus{
     align-items: center;
   }
 
+/* rotated css */
+
   .rotated{
    -webkit-transform: rotate(270deg);
    -moz-transform: rotate(270deg);
@@ -715,12 +727,13 @@ input:focus{
    transform: rotate(270deg);
    position: fixed;
    top: 46%;
-   left: 95%;
+   left: 94%;
    min-height: 200px;
    display: inline-block;
    z-index: 5;
   }
-  .line{
+
+  .run-through{
     height: 1px;
     width: 287px;
     border: 1px solid #000033;
@@ -733,6 +746,7 @@ input:focus{
   .cabin{
     font-family: 'Cabin', sans-serif;
   }
+/* rotated css ends here */
 
   .path{
       height: 800px;
@@ -744,26 +758,19 @@ input:focus{
 
   .top_star{
     display: block;
+    top: 24px;
+    right: 0px;
+    position: absolute;
   }
 
   .top_star img{
     height: 220px;
-    top: 24px;
-    right: -63px;
-    position: absolute;
   }
-
-
 
   .top{
     padding: 0px;
 
   }
-
-  /* .navbar-nav{
-    float: none;
-  } */
-
 
   .checkout{
     margin-top: 5px;
@@ -810,14 +817,14 @@ input:focus{
 
   .header-form{
     height: 80px;
-    width: 900px;
+    width: fit-content;
     padding-top: 7px;
     padding-left: 9px;
     border-radius: 7px;
-    position: absolute;
+    position: relative;
     background-color: #fff;
-    top: 98%;
-    left: 20%;
+    top: -50px;
+    left: 55px;
     z-index: 2;
   }
 
@@ -861,15 +868,54 @@ input:focus{
   .part1{
     padding-top: 0px;
   }
-  .space{
-    margin-top: 70px;
+  .shopping_space{
+    margin-top: 500px;
   }
 }
 
-@media only screen and (min-width: 1440px){
+@media only screen and (min-width: 1024px){
   .header-form{
-    position: absolute;
-    top: 72%;
-    left: 20%;
+    position: relative;
+    width: fit-content;
+    top: -50px;
+    left: 30%;
+  }
+
+  #desktop-nav{
+    display: block;
+  }
+
+  #navbar-large{
+    display: none;
+  }
+
+  .info{
+    display: block;
+  }
+
+  .rotated{
+   -webkit-transform: rotate(270deg);
+   -moz-transform: rotate(270deg);
+   -o-transform: rotate(270deg);
+   -ms-transform: rotate(270deg);
+   transform: rotate(270deg);
+   position: fixed;
+   top: 46%;
+   left: 95%;
+   min-height: 200px;
+   display: inline-block;
+   z-index: 5;
+  }
+
+
+    .top_star{
+      display: block;
+      top: 24px;
+      right: -63px;
+      position: absolute;
+    }
+
+  .shopping_space{
+    margin: 0;
   }
 }
