@@ -12,13 +12,7 @@
     text-align: center;
     color: #969696;
 }
-.show{
-    font-size: 10px;
-    font-family: 'Ubuntu', sans-serif;
-    font-style: italic;
-    color: #FF3C89;
-    text-align: center;
-}
+
 .items{
      font-size: 12px;
      font-family: 'Cabin', sans-serif;
@@ -161,7 +155,7 @@ button.slick-prev.slick-arrow {
     border: none;
   }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 410px) {
     .none img{
         display: none;
     }
@@ -197,10 +191,37 @@ button.slick-prev.slick-arrow {
         border: none;
       }
 
+      .show{
+          font-size: 10px;
+          font-family: 'Ubuntu', sans-serif;
+          font-style: italic;
+          color: #FF3C89;
+          text-align: center;
+          width: auto!important;
+      }
 
 
 }
 /* end of media query */
+
+/* another media query */
+@media only screen and (max-width: 768px){
+  .flash{
+      margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+  }
+
+  .show{
+      font-size: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-style: italic;
+      color: #FF3C89;
+      text-align: center;
+      width: inherit;
+  }
+}
 #buybutton{
     background-color: white;
     border-radius: 12px;
@@ -288,7 +309,7 @@ a:hover {
 .star{
     color: #FF0066;
     font-size: 10px;
-    margin-left: 30px;
+    padding: 3px;
     justify-content: space-between;
 }
 .far-fa-star{

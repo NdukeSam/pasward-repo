@@ -1,5 +1,12 @@
 <style>
   /* start of header css */
+  body{
+    margin: 0px;
+    overflow-x: hidden;
+    height: auto;
+    padding-top: 70px;
+  }
+
   body h1, h2, h3, h4, h5, h6{
     font-family: 'Ubuntu', sans-serif;
   }
@@ -12,6 +19,70 @@
   body p{
     font-family: 'Cabin', sans-serif;
   }
+
+  /* start code for categories dropdown */
+  .categories{
+    width: 100%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .drop{
+    background-color: #000333;
+    height: 100vh;
+  }
+
+  .drop li a{
+    color: #fff;
+  }
+
+  .drop a:hover{
+    color: #ff3c89;
+  }
+  .icon::before {
+      display: inline-block;
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+
+   .drop a:hover::before{
+      font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f005";
+      content: "\f005";
+      position: relative;
+      left: -18px;
+      top: 47px;
+  }
+
+  .drop h1{
+    font-size: 30px;
+    color: #fff;
+  }
+
+
+  .categories-margin-top{
+    margin-top: 60px;
+    text-align: left;
+    padding-left: 80px;
+    margin-bottom: 123px;
+  }
+
+  .simply{
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 200;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .explore{
+    background-color: #FF0066;
+    color: #fff;
+    border: none;
+    border-radius: 17px;
+    padding: 5px;
+  }
+  /* end code for categories dropdown */
 
   .info{
       background-color: #F5F5F5;
@@ -115,23 +186,6 @@
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-
-
-
-  /*
-  .form-control{
-    border-right-color: #fff;
-    border-left-color: #fff;
-  } */
-
-  /* .input-group{
-    border-radius: 5px;
-    border: 1px solid #ff0066;
-  }
-
-  .input-group-addon{
-    background-color: #fff;
-  } */
 
   .none{
     border-left-color: #fff;
@@ -307,6 +361,28 @@
   }
 
   /*end of footer css*/
+
+  /* start of header media query */
+  @ media only screen and (min-width: 360px) {
+    #desktop-nav{
+      display: none;
+    }
+
+    #navbar-flex{
+      display: flex;
+    }
+  }
+
+  @media only screen and (min-width: 1024px;){
+    #desktop-nav{
+      display: block;
+    }
+
+    #navbar-flex{
+      display: none;
+    }
+  }
+  /* end of header media query */
 </style>
 <!-- Start of Nav-->
 <div class="navbar-fixed-top">
@@ -579,6 +655,11 @@ Copyright 2018
   <!-- End of Footer -->
 
   <!-- Start of script-->
+  <script src="js/jquery.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
   <script type="text/javascript">
   function openNav() {
 document.getElementById("mySidenav").style.width = "200px";
