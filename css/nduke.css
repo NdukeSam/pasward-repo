@@ -717,6 +717,8 @@ input:focus{
     align-items: center;
   }
 
+/* rotated css */
+
   .rotated{
    -webkit-transform: rotate(270deg);
    -moz-transform: rotate(270deg);
@@ -731,7 +733,7 @@ input:focus{
    z-index: 5;
   }
 
-  .line{
+  .run-through{
     height: 1px;
     width: 287px;
     border: 1px solid #000033;
@@ -744,6 +746,7 @@ input:focus{
   .cabin{
     font-family: 'Cabin', sans-serif;
   }
+/* rotated css ends here */
 
   .path{
       height: 800px;

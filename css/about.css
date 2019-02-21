@@ -328,15 +328,17 @@ opacity: 100%;
    border-width: 0.8px;
    border-color: #6E6E6E;
 }
-.line1 hr{
+.line1 input{
     display: block;
     margin-left: 40px;
     margin-bottom: 0.5em;
     margin-right: 30px;
     border-style: inset;
     border-width: 0.8px;
-    border-color: #6E6E6E;
-    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #6E6E6E;
+    margin-top: 10px;
+    background-color: transparent;
 }
 #subscribebutton{
     background-color: #FF0066;
@@ -359,6 +361,22 @@ opacity: 100%;
 }
 .nav-link {
   float: right !important;
+  }
+
+  .circle{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .up{
+    font-size: 17px;
+    color: #707070;
+    align-self: center;
+  }
 }
 
 /*end of footer css*/
@@ -397,6 +415,8 @@ opacity: 100%;
 .pink-side{
   border-left: 1px solid #FF0066;
 }
+
+
 
 /* start of header media query */
 
