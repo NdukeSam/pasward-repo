@@ -200,22 +200,6 @@ input:focus{
   justify-content: space-between;
 }
 
-
-/*
-.form-control{
-  border-right-color: #fff;
-  border-left-color: #fff;
-} */
-
-/* .input-group{
-  border-radius: 5px;
-  border: 1px solid #ff0066;
-}
-
-.input-group-addon{
-  background-color: #fff;
-} */
-
 .none{
   border-left-color: #fff;
   /* border-right: 1px solid #FF0066; */
@@ -248,6 +232,8 @@ input:focus{
   color: #FF0066;
 }
 /* end of header css  */
+
+
 /* start of footer css */
 .merchant{
     background-color: #E9EAF9;
@@ -356,15 +342,17 @@ opacity: 100%;
    border-width: 0.8px;
    border-color: #6E6E6E;
 }
-.line1 hr{
+.line1 input{
     display: block;
     margin-left: 40px;
     margin-bottom: 0.5em;
     margin-right: 30px;
     border-style: inset;
     border-width: 0.8px;
-    border-color: #6E6E6E;
-    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #6E6E6E;
+    margin-top: 10px;
+    background-color: transparent;
 }
 #subscribebutton{
     background-color: #FF0066;
@@ -378,10 +366,6 @@ opacity: 100%;
     height: 30px;
     margin-top: 40px;
 }
-
-.other-table{
-  border: 1px solid #ccc;
-}
 .copyright{
     font-size: 12px;
     font-family: 'Cabin', sans-serif;
@@ -391,9 +375,26 @@ opacity: 100%;
 }
 .nav-link {
   float: right !important;
+  }
+
+  .circle{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .up{
+    font-size: 17px;
+    color: #707070;
+    align-self: center;
+  }
 }
 
 /*end of footer css*/
+
 ._display{
   display: flex;
   border: 1px solid #EEEFFA;
@@ -515,7 +516,7 @@ opacity: 100%;
    z-index: 5;
   }
 
-  .line{
+  .run-through{
     height: 1px;
     width: 287px;
     border: 1px solid #000033;

@@ -1,4 +1,5 @@
-<style>
+<head>
+  <style>
   /* start of header css */
   body{
     margin: 0px;
@@ -9,6 +10,7 @@
 
   body h1, h2, h3, h4, h5, h6{
     font-family: 'Ubuntu', sans-serif;
+    color: #000333;
   }
 
   body a{
@@ -342,15 +344,17 @@
      border-width: 0.8px;
      border-color: #6E6E6E;
   }
-  .line1 hr{
+  .line1 input{
       display: block;
       margin-left: 40px;
       margin-bottom: 0.5em;
       margin-right: 30px;
       border-style: inset;
       border-width: 0.8px;
-      border-color: #6E6E6E;
-      margin-top: 25px;
+      border: none;
+      border-bottom: 1px solid #6E6E6E;
+      margin-top: 10px;
+      background-color: transparent;
   }
   #subscribebutton{
       background-color: #FF0066;
@@ -373,12 +377,28 @@
   }
   .nav-link {
     float: right !important;
+    }
+
+    .circle{
+      border: 1px solid #707070;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      width: 50px;
+    }
+
+    .up{
+      font-size: 17px;
+      color: #707070;
+      align-self: center;
+    }
   }
 
   /*end of footer css*/
 
   /* start of header media query */
-  @ media only screen and (min-width: 360px) {
+  @media only screen and (min-width: 360px) {
     #desktop-nav{
       display: none;
     }
@@ -399,6 +419,7 @@
   }
   /* end of header media query */
 </style>
+</head>
 <!-- Start of Nav-->
 <div class="navbar-fixed-top">
   <div class="info hidden-xs ">
@@ -434,7 +455,7 @@
         </div>
     </div>
   </div>
-<div style="background-color: #fff; -webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
+<div id="desktop-nav" style="background-color: #fff; -webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
 -moz-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.75);
 box-shadow: 0px 4px 10px -6px rgba(0,0,0,0.75);">
     <div class="container">
@@ -515,18 +536,18 @@ box-shadow: 0px 4px 10px -6px rgba(0,0,0,0.75);">
       <div id="navbar-large" style="background-color: #fff; -webkit-box-shadow: 0px 4px 10px -2px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 4px 10px -1px rgba(0,0,0,0.75);
         box-shadow: 0px 4px 10px -6px rgba(0,0,0,0.75);">
-        <a href="#" class="hide-md" style="align-self: center; padding-right: 20px;">
+        <a href="#" style="align-self: center; padding-right: 20px;">
           <i class="fa fa-shopping-bag" style=" font-size: 20px;"></i>
         </a>
 
 
 
-        <a class="navbar-brand svglogo hide-md" href="#" >
+        <a class="navbar-brand svglogo" href="#" >
           <img src="images/passward logo normal.svg" alt="logo" class="img-fluid img-responsive logo">
         </a>
 
 
-          <button type="button" onclick="openNav()" data-target="#mySidenav" name="button" class="btn btn-none hide-md" ><i class="fa fa-bars fa-2x"></i> </button>
+          <button type="button" onclick="openNav()" data-target="#mySidenav" name="button" class="btn btn-none" ><i class="fa fa-bars fa-2x"></i> </button>
 
         <div class=" sidenav" id="mySidenav">
            <ul class="navbar-nav list-inline straight">

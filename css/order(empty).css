@@ -491,6 +491,11 @@ body h1, h2, h3, h4, h5, h6{
       color: #000033;
       font-weight: bold;
     }
+    .video{
+      top: -81px;
+    }
+}
+
 
   @media only screen and (min-width: 768px) {
     .hide-sm{

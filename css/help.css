@@ -196,23 +196,6 @@ input:focus{
   justify-content: space-between;
 }
 
-
-
-/*
-.form-control{
-  border-right-color: #fff;
-  border-left-color: #fff;
-} */
-
-/* .input-group{
-  border-radius: 5px;
-  border: 1px solid #ff0066;
-}
-
-.input-group-addon{
-  background-color: #fff;
-} */
-
 .none{
   border-left-color: #fff;
   /* border-right: 1px solid #FF0066; */
@@ -277,7 +260,7 @@ input:focus{
  display: inline-block;
  z-index: 5;
 }
-.line{
+.run-through{
   height: 1px;
   width: 287px;
   border: 1px solid #000033;
@@ -461,16 +444,7 @@ input:focus{
     color: #969696;
     text-align: center;
 }
-.run-through{
-    display: block;
-    margin-top: 9px;
-    margin-bottom: 0px;
-    margin-left: 1px;
-    margin-right: 1px;
-    border-style: inset;
-    border-width: 0.25px;
-    border-color: #6E6E6E;
-}
+
 .notabuyer{
     padding-top: 10px;
 }
@@ -518,7 +492,7 @@ input:focus{
     margin-left: 10px;
 }
 
-/* start of footer css */
+//* start of footer css */
 .merchant{
     background-color: #E9EAF9;
     margin-top: 160px;
@@ -538,7 +512,7 @@ font-size: 34px;
 font-weight: bold;
 font-family: 'Ubuntu', sans-serif;
 color: #000033;
-opacity: 1;
+opacity: 100%;
 
 }
 .find{
@@ -587,8 +561,9 @@ opacity: 1;
 .list:hover {
     color: white;
     text-decoration: none;
-}
 
+
+}
 .category{
    color: white;
    font-size: 12px;
@@ -625,15 +600,17 @@ opacity: 1;
    border-width: 0.8px;
    border-color: #6E6E6E;
 }
-.line1 hr{
+.line1 input{
     display: block;
     margin-left: 40px;
     margin-bottom: 0.5em;
     margin-right: 30px;
     border-style: inset;
     border-width: 0.8px;
-    border-color: #6E6E6E;
-    margin-top: 25px;
+    border: none;
+    border-bottom: 1px solid #6E6E6E;
+    margin-top: 10px;
+    background-color: transparent;
 }
 #subscribebutton{
     background-color: #FF0066;
@@ -656,6 +633,22 @@ opacity: 1;
 }
 .nav-link {
   float: right !important;
+  }
+
+  .circle{
+    border: 1px solid #707070;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+  }
+
+  .up{
+    font-size: 17px;
+    color: #707070;
+    align-self: center;
+  }
 }
 
 /*end of footer css*/

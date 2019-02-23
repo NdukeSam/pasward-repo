@@ -1,4 +1,4 @@
-
+/* header css */
 body{
   padding-top: 100px;
 }
@@ -703,6 +703,10 @@ opacity: 100%;
     display: block;
   }
 
+  .hidden-xs{
+    display: none;
+  }
+
   .hide-md{
     display: none;
   }
@@ -720,15 +724,32 @@ opacity: 100%;
     float: none;
   }
 
-
   .checkout{
     margin-top: 5px;
   }
 
   #navbar-large{
-    display: hidden;
+    display: flex;
   }
 
+  #desktop-nav{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  #desktop-nav{
+    display: block;
+  }
+
+  #navbar-large{
+    display: none;
+  }
+}
+
+.hidden-xs{
+  display: block;
 }
 
 /*TO THE VERY END*/

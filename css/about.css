@@ -468,7 +468,7 @@ opacity: 100%;
     }
 
     .absolute-on-header{
-      top: 213px;
+      top: 287px;
       right: 175px;
       position: absolute;
     }
@@ -521,7 +521,7 @@ opacity: 100%;
 
   .absolute-on-header{
     position: absolute;
-    top: 30%;
+    top: 42%;
     left: 50%;
   }
 }
