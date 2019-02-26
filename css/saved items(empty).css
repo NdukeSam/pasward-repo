@@ -8,7 +8,8 @@ body{
 
 body h1, h2, h3, h4, h5, h6{
   font-family: 'Ubuntu', sans-serif!important;
-  color: #000333;
+  color: #000333!important;
+  font-weight: bold!important;
 }
 
 body a{
@@ -212,7 +213,7 @@ input:focus{
 }
 
 .purple{
-  background-color: #FF0066;
+  background-color: #FF0066!important;
 }
 
 #search::-ms-input-placeholder{
@@ -473,14 +474,34 @@ input:focus{
   }
   @media only screen and (min-width: 320px) {
 
-     .hide-md{
-       display: inline-block;
-     }
+    #desktop-nav{
+      display: none;
+    }
 
-     .hide-sm{
-       display: none;
-     }
+    #navbar-flex{
+      display: flex;
+    }
 
+    .hide-md{
+      display: inline-block;
+    }
+
+    .hide-sm{
+      display: none;
+    }
+
+    .svglogo {
+      padding-top: 15px;
+
+    }
+      .part1{
+        /* padding-top: 369px; */
+        justify-content: center;
+      }
+
+      .video{
+        top: -81px;
+      }
      .rotated{
        display: none;
      }
@@ -499,28 +520,71 @@ input:focus{
       display: none;
     }
     #navbar-large{
-      display: none!important;
+      display: flex;
     }
 
-    .rotated{
-     -webkit-transform: rotate(270deg);
-     -moz-transform: rotate(270deg);
-     -o-transform: rotate(270deg);
-     -ms-transform: rotate(270deg);
-     transform: rotate(270deg);
-     position: absolute;
-     top: 35%;
-     left: 95%;
-     min-height: 300px;
-     display: inline-block;
-     position: absolute;
+    /* rotated css */
+
+      .rotated{
+       -webkit-transform: rotate(270deg);
+       -moz-transform: rotate(270deg);
+       -o-transform: rotate(270deg);
+       -ms-transform: rotate(270deg);
+       transform: rotate(270deg);
+       position: fixed;
+       top: 46%;
+       left: 94%;
+       min-height: 200px;
+       display: inline-block;
+       z-index: 5;
+      }
+
+      .run-through{
+        height: 1px;
+        width: 287px;
+        border: 1px solid #000033;
+        position: absolute;
+        z-index: 5;
+        margin-top: 9px;
+        margin-left: 11px;
+      }
+
+      .cabin{
+        font-family: 'Cabin', sans-serif;
+      }
+    /* rotated css ends here */
+
+    .top_star{
+      display: none;
     }
 
-    .path_star{
-      top: -152px;
-      left: 30px;
+    .info{
+      display: none;
     }
-    .cabin{
-      font-family: 'Cabin', sans-serif;
+
+  }
+
+  @media only screen and (min-width: 1024px){
+    .top_star{
+      display: block;
+      top: 24px;
+      right: -44px;
+      position: absolute;
+    }
+
+    .top_star img{
+      height: 220px;
+    }
+
+    .info{
+      display: block;
+    }
+
+    #desktop-nav{
+      display: block;
+    }
+
+    #navbar-large{
+      display: none;
     }
   }

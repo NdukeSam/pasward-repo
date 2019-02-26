@@ -470,6 +470,10 @@ opacity: 100%;
     font-weight: bold;
   }
 
+  .video{
+    top: -81px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .hide-sm{
     display: none;
@@ -538,6 +542,17 @@ opacity: 100%;
      display: block;
    }
 
+   .other-table{
+     margin-bottom: 50px;
+     border: 1px solid #ccc;
+     overflow: hidden;
+   }
+
+   .whole-table{
+     border: 1px solid #ccc;
+     font-family: "Cabin", sans-serif;
+     overflow: hidden;
+   }
 }
 
 @media only screen and (min-width: 1024px){
