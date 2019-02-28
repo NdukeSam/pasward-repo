@@ -346,12 +346,6 @@ input:focus{
 .star{
     color:#FF3C89;
 }
-.price{
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    color: #000033;
-}
 .shop{
     font-size: 10px;
     font-family:'Cabin', sans-serif;
@@ -563,79 +557,86 @@ opacity: 100%;
 
 /*end of footer css*/
 
-  /* start of header media query */
-  @media only screen and (min-width: 320px) {
-    #desktop-nav{
-      display: none;
-    }
-
-    #navbar-large{
-      display: flex;
-    }
-
-    .hide-md{
-      display: inline-block;
-    }
-
-    .hide-sm{
-      display: none;
-    }
-
-    .svglogo {
-      padding-top: 15px;
-
-    }
-      .part1{
-        /* padding-top: 369px; */
-        justify-content: center;
-      }
-
-      .video{
-        top: -81px;
-      }
-
-      .top_star{
-        display: none;
-      }
+@media only screen and (min-width: 320px) {
+  #desktop-nav{
+    display: none;
   }
 
-  @media only screen and (min-width: 768px){
-    .info{
-      display: none;
-    }
-
-    .svglogo {
-      margin-left: -15px;
-
-    }
-
-    .hide-sm{
-      display: none;
-    }
-
-    .hidden-sm{
-      display: block;
-    }
-
+  #navbar-large{
+    display: flex;
   }
 
-  @media only screen and (min-width: 1024px){
-    #desktop-nav{
-      display: block;
+  .hide-md{
+    display: inline-block;
+  }
+
+  .hide-sm{
+    display: none;
+  }
+
+  .svglogo {
+    padding-top: 15px;
+
+  }
+    .part1{
+      /* padding-top: 369px; */
+      justify-content: center;
     }
 
-    #navbar-large{
-      display: none;
-    }
-
-    .info{
-      display: block;
+    .video{
+      top: -81px;
     }
 
     .top_star{
-      display: block;
-      top: 24px;
-      right: -44px;
+      display: none;
     }
+}
+
+@media only screen and (min-width: 768px){
+  .info{
+    display: none;
   }
-  /* end of header media query */
+
+  .svglogo {
+    margin-left: -15px;
+
+  }
+
+  .hide-sm{
+    display: none;
+  }
+
+  .hidden-sm{
+    display: block;
+  }
+
+  .hide-md{
+      display: none;
+  }
+
+  .top{
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1024px){
+  #desktop-nav{
+    display: block;
+  }
+
+  #navbar-large{
+    display: none;
+  }
+
+  .info{
+    display: block;
+  }
+
+  .top_star{
+    display: block;
+    top: 24px;
+    right: -44px;
+  }
+}
+/* end of header media query */
